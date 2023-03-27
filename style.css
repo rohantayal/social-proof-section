@@ -1,0 +1,107 @@
+* {
+    font-family: "League Spartan";
+    background-color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+
+
+}
+
+body {
+    font-size: 15px;
+    background-image: url(images/bg-pattern-top-mobile.svg,), url(images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    margin: 1.5rem;
+}
+
+header h1 {
+    margin: 2.5rem 2.5rem 1.5rem 2.5rem;
+}
+
+header p {
+    color: hsl(303, 10%, 53%);
+}
+
+
+.star-container {
+    text-align: center;
+    margin: 1.5rem;
+
+}
+
+.stars {
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+
+}
+
+.stars img {
+    padding-top: 1rem;
+    background-color: transparent;
+}
+
+.star-container p {
+    color: hsl(300, 43%, 22%);
+    padding: .5rem .5rem 1rem .5rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: .5rem;
+
+}
+
+.testimonial-container {
+    margin: 1.5rem;
+    text-align: left;
+}
+
+.testimonial {
+    background-color: hsl(300, 43%, 22%);
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: .5rem 0;
+
+}
+
+.testimonial h4 {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 43%, 22%);
+    display: inline-block;
+    position: relative;
+    bottom: 2rem;
+    left: 1rem;
+
+}
+
+.testimonial h5 {
+    color: hsl(333, 80%, 67%);
+    background-color: hsl(300, 43%, 22%);
+    display: inline-block;
+    position: relative;
+    bottom: 1rem;
+    left: -4.5rem;
+}
+
+.testimonial p {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 43%, 22%);
+    border-radius: .5rem;
+
+}
