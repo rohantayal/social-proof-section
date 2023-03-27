@@ -1,31 +1,42 @@
 * {
-    font-family: "League Spartan";
-    background-color: hsl(0, 0%, 100%);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-
-
-
 }
 
 body {
     font-size: 15px;
+    font-family: "League Spartan";
+    background-color: hsl(0, 0%, 100%);
     background-image: url(images/bg-pattern-top-mobile.svg,), url(images/bg-pattern-bottom-mobile.svg);
     background-position: top, bottom;
     background-repeat: no-repeat;
+
 }
 
+.social-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+}
 
 header {
     text-align: center;
     color: hsl(300, 43%, 22%);
-    margin: 1.5rem;
+    margin: 15px 0px;
+    max-width: 390px;
 }
 
 header h1 {
-    margin: 2.5rem 2.5rem 1.5rem 2.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 header p {
@@ -35,8 +46,9 @@ header p {
 
 .star-container {
     text-align: center;
-    margin: 1.5rem;
-
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 500px;
 }
 
 .stars {
@@ -56,12 +68,14 @@ header p {
     padding: .5rem .5rem 1rem .5rem;
     background-color: hsl(300, 24%, 96%);
     border-radius: .5rem;
+    font-weight: 700;
 
 }
 
 .testimonial-container {
-    margin: 1.5rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial {
@@ -72,31 +86,26 @@ header p {
 
 }
 
+.testimonial-top {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
 .testimonial img {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    margin: .5rem 0;
-
+    margin-right: 1rem;
 }
 
 .testimonial h4 {
     color: hsl(0, 0%, 100%);
     background-color: hsl(300, 43%, 22%);
-    display: inline-block;
-    position: relative;
-    bottom: 2rem;
-    left: 1rem;
-
 }
 
 .testimonial h5 {
     color: hsl(333, 80%, 67%);
     background-color: hsl(300, 43%, 22%);
-    display: inline-block;
-    position: relative;
-    bottom: 1rem;
-    left: -4.5rem;
 }
 
 .testimonial p {
@@ -104,4 +113,107 @@ header p {
     background-color: hsl(300, 43%, 22%);
     border-radius: .5rem;
 
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+}
+
+footer a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    ;
+}
+
+@media screen and (min-width:960px) {
+
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-position: top, bottom;
+        background-repeat: no-repeat;
+    }
+
+    .social-section {
+        margin: 0 8%;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    .top-container {
+        flex-direction: row;
+        align-items: flex-end;
+        margin: 100px 0 50px 0;
+        justify-content: space-between;
+
+    }
+
+    header {
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .star-container {
+        margin: 0;
+        /*display: flex;
+        flex-direction: column;
+        align-content: flex-end;*/
+        align-self: center;
+        justify-self: end;
+
+    }
+
+    .stars {
+        width: 400px;
+
+    }
+
+    .stars p {
+        display: inline-block;
+    }
+
+    .stars-1 {
+        position: relative;
+        right: 6em;
+    }
+
+    .stars-2 {
+        position: relative;
+        right: 3em;
+    }
+
+    .testimonial-container {
+        flex-direction: row;
+        height: 500px;
+
+    }
+
+    .testimonial {
+        margin-right: 1rem;
+        width: 400px;
+        height: 250px;
+    }
+
+    .testimonial-top {
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-2 {
+        position: relative;
+        top: 3rem;
+    }
+
+    .testimonial-3 {
+        position: relative;
+        top: 6rem;
+
+    }
 }
